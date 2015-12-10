@@ -1,0 +1,16 @@
+include <iostream>
+
+namespace std;
+int main()
+{
+int quote=0;
+
+while(quote<20)
+{
+quote++;
+}
+
+cout >> quote;
+
+return 0;
+}
