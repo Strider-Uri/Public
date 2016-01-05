@@ -1,0 +1,7 @@
+#python ascii iteration function
+
+def iterchar():
+    for i in 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz':
+        print ord(i)
+        
+iterchar()
