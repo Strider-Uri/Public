@@ -1,0 +1,85 @@
+#input test
+name = input("Please enter your name.").lower()
+
+if(name=="kally"): temp=input(" (^_^')\nWelcome "+name+". Would you like to play a game?")
+
+else: answer=input("Are you aware that you are using Kally's account, " + name + "?").lower()
+
+if(answer=='yes'): print "..shame. Program terminated."
+    
+else: temp=input("Well now you do.\nWell then, would you like to play a game?")
+
+#turtle cube incomplete
+
+import turtle
+
+t = turtle.Turtle()
+
+x=50
+y=40
+
+for i in range(0,5):
+    t.forward(x)
+    t.left(90) 
+t.right(45)
+t.forward(y)
+t.left(45)
+t.forward(x)
+t.left(135)
+t.forward(y)
+t.back(y)
+t.right(45)
+t.forward(x)
+t.left(45)
+t.forward(y)
+t.back(y)
+t.left(45)
+t.forward(x)
+t.right(45)
+t.forward(y)
+t.back(y)
+t.left(135)
+t.forward(x)
+
+#while loop logic
+x = 0
+while x != 5:
+   x = input("Guess a number:")
+   #accepts input but never allows 5 to exit loop as condition.
+   #use:
+   #x=int(input(“Guess a number:”))
+   if x != 5:
+      print("Incorrect choice")
+
+print("Correct")
+
+#string marker and iterator syntax
+name = raw_input("who are you?")
+print "hello %s" % (name,)
+
+friends = ['john', 'pat', 'gary', 'michael']
+
+for i, name in enumerate(friends):
+    print "iteration {iteration} is {name}".format(iteration=i, name=name)
+
+#boolean order of operations
+not is evaluated first;
+and is evaluated next;
+or is evaluated last.
+
+#Pig latin translator(unfinished)
+
+pyg = 'ay'
+original = raw_input('Enter a word:')
+word=original.lower()
+first=word[0]
+new_word=original[1:len(new_word)]+word[0]+pyg
+
+if len(original) > 0 and original.isalpha():
+    print new_word
+else:
+    print 'Please enter letters only. No numbers or characters.'
+
+
+
+
