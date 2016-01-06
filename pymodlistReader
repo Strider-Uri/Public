@@ -1,0 +1,3 @@
+import string            # Imports a module
+everything = dir(string) # Sets everything to a list of things from module
+print everything         # Prints all
