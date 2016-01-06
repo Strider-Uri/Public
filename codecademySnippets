@@ -67,7 +67,7 @@ for i, name in enumerate(friends):
 #and is evaluated next;
 #or is evaluated last.
 
-#Pig latin translator(unfinished)
+#Pig latin translator
 
 pyg = 'ay'
 original = raw_input('Enter a word:')
@@ -79,7 +79,15 @@ if len(original) > 0 and original.isalpha():
     print new_word
 else:
     print 'Please enter letters only. No numbers or characters.'
-
-
-
+    
+#volume changer
+def volume_button(s):
+    if s=="yes":
+        return "Turning up"
+    elif s=="no":
+        return "Turning down"
+    else:
+        return "no change"
+s=raw_input("Yes to increase, no to decrease.")
+print volume_button(s.lower())
 
