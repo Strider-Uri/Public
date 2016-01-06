@@ -63,9 +63,9 @@ for i, name in enumerate(friends):
     print "iteration {iteration} is {name}".format(iteration=i, name=name)
 
 #boolean order of operations
-not is evaluated first;
-and is evaluated next;
-or is evaluated last.
+#not is evaluated first;
+#and is evaluated next;
+#or is evaluated last.
 
 #Pig latin translator(unfinished)
 
