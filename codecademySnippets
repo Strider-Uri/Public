@@ -106,13 +106,30 @@ def plane_ride_cost(city):
     else:
         return "Enter a valid city."
     
-nights=2
-print "Your hotel stay will be: $" + str(hotel_cost(nights))
-
+def rental_car_cost(days):
+    if days<=0:
+        return 0
+    elif days<3 and days>0:
+        return days*40
+    elif days>=3 and days<7:
+        return (days*40)-20
+    elif days>=7:
+        return (days*40)-50
+    else:
+        return "Woops! Invalid entry."
+    
+def trip_cost(city, days):
+    return rental_car_cost(days)+hotel_cost(days)+plane_ride_cost(city)
+    
+nights=input("How many nights will you be staying?")
+days=input("How many days will you require your rental car?")
+rental_car_quote=rental_car_cost(days)
 city=raw_input("Which city will you be traveling from?")
-print "Your air travel cost will be: $" + str(plane_ride_cost(city))
 
-print "Your total costs will be $" + str(hotel_cost(nights)+plane_ride_cost(city)) + str('.')
+print "Your rental car will cost: $" + str(rental_car_quote)
+print "Your air travel cost will be: $" + str(plane_ride_cost(city))
+print "Your hotel stay will be: $" + str(hotel_cost(nights))
+print "Your total costs will be: $" + str(trip_cost(city, days))
 
 #volume changer
 def volume_button(s):
