@@ -130,6 +130,10 @@ print "Your rental car will cost: $" + str(rental_car_quote)
 print "Your air travel cost will be: $" + str(plane_ride_cost(city))
 print "Your hotel stay will be: $" + str(hotel_cost(nights))
 print "Your total costs will be: $" + str(trip_cost(city, days))
+"""To manually input variables, delete nights, days, 
+rental_car_quote and city statements, along with the 
+following print statements. Replace with:
+#print "Your total costs will be: $" + str(trip_cost('los angeles', 5, 600))"""
 
 #volume changer
 def volume_button(s):
