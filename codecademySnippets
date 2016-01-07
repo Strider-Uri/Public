@@ -80,6 +80,40 @@ if len(original) > 0 and original.isalpha():
 else:
     print 'Please enter letters only. No numbers or characters.'
     
+#number checker
+def distance_from_zero(number):
+    if type(number)==int or type(number)==float:
+        return abs(number)
+    else:
+        return "Nope"
+        
+number=8    
+print distance_from_zero(number)
+
+#travel calculator
+def hotel_cost(nights):
+    return 140*nights
+    
+def plane_ride_cost(city):
+    if city.lower()=="charlotte":
+        return 183
+    elif city.lower()=="tampa":
+        return 220
+    elif city.lower()=="pittsburgh":
+        return 222
+    elif city.lower()=="los angeles":
+        return 475
+    else:
+        return "Enter a valid city."
+    
+nights=2
+print "Your hotel stay will be: $" + str(hotel_cost(nights))
+
+city=raw_input("Which city will you be traveling from?")
+print "Your air travel cost will be: $" + str(plane_ride_cost(city))
+
+print "Your total costs will be $" + str(hotel_cost(nights)+plane_ride_cost(city)) + str('.')
+
 #volume changer
 def volume_button(s):
     if s=="yes":
