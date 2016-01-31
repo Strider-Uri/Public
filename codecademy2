@@ -45,6 +45,23 @@ print zoo_animals
 
 #wrapping up dictionaries
 
+inventory = { 'axe' : '3',
+    'sword' : '2',
+    'polearm' : '4'}
+
+def hitValue():
+    hitlist={'hits' : ['1', '2', '3', '4', '5', '6']}
+    for r in hitlist:
+        return hitlist['hits']
+
+def multiplier():
+    for c in inventory:
+        if c=="sword":
+            return inventory['sword']
+        
+for q in xrange(10):
+	print hitValue()
+
 inventory = {
     'gold' : 500,
     'pouch' : ['flint', 'twine', 'gemstone'], # Assigned a new list to 'pouch' key
