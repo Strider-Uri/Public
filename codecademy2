@@ -59,7 +59,7 @@ def multiplier():
         if c=="sword":
             return inventory['sword']
         
-for q in xrange(10):
+for q in xrange(10): #xrange(start, stop[, step])
 	print hitValue()
 
 inventory = {
