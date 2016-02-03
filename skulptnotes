@@ -1,0 +1,22 @@
+"""
+Notes and rules for python implemented through skulpt.org
+
+#1 version
+    Python 2.2
+#2 compiler?
+
+#3 output
+    output frame is built into page, there is also console window 
+    application through raw_input() and the like.
+#4 iteration
+    word="word" 
+    print word#[0:2]
+    this works just fine, but try printing a slice the same, and the
+    program wont run. Must use a loop to iterate through the string.
+    word="word"
+    for i in word: print word[0:2]
+
+
+
+
+"""
