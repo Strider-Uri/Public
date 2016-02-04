@@ -1,0 +1,26 @@
+fortran
+  program triangle_area
+  
+    implicit none
+    real :: a, b, c, s, p, Area
+    
+    a = 3
+    b = 6
+    c = 9
+    
+    p = a+b+c
+    s = p/2
+    
+    Area = (s*(s-a)*(s-b)*(s-c))**0.5
+    
+  end program triangle_area 
+
+c++
+void triangle_area(int, int, int);
+  { int a=3, b=6, c=9;
+    int p=a+b+c;
+    float s=p/2.0;
+    float area=(s*(s-a)*(s-b)*(s-c))**0.5 //multiplying by zero..
+
+java
+
