@@ -1,0 +1,4 @@
+Operative functions for game drivers
+perhaps using java?
+
+Math.round(Math.random()*2); //for quest rewards
