@@ -23,17 +23,75 @@ from datetime import datetime
 now = datetime.now()
 
 print '%s/%s/%s' % (now.month, now.day, now.year)
+print '%s:%s:%s' % (now.hour, now.minute, now.second)
 
+""" Control Flow """
 
+def choice():
+    print "You've got choices!"
+    answer = raw_input("Type left or right").lower()
+    if answer == "left" or answer == "l":
+        print "Verbal Abuse Room!"
+    elif answer == "right" or answer == "r":
+        print "Argument Room"
+    else:
+        print "didn't pick"
+        choice()
 
+choice()
 
+"""
+     Boolean Operators
+------------------------      
+True and True is True
+True and False is False
+False and True is False
+False and False is False
 
+True or True is True
+True or False is True
+False or True is True
+False or False is False
 
+Not True is False
+Not False is True
 
+Boolean operators aren't just evaluated from left to right. 
+Just like with arithmetic operators, 
+there's an order of operations for boolean operators:
 
+not is evaluated first;
+and is evaluated next;
+or is evaluated last.
 
+"""
 
+# checking for a value
+def greater_less_equal_5(answer):
+    if answer>5:
+        return 1
+    elif answer<5:          
+        return -1
+    else:
+        return 0
+        
+print greater_less_equal_5(4)
+print greater_less_equal_5(5)
+print greater_less_equal_5(6)
 
-
-
+# if and elif: always return on conditional function?
+def the_flying_circus():
+    if animals>20:
+        print "There is a full gallery of animals."
+        return True
+    elif animals<=20 and animals>0:
+        print "We should get more animals."
+        return False
+    else:
+        print "There aren't enough animals for the show."
+        # Start coding here!
+        # Don't forget to indent
+        # the code inside this block!
+animals=29
+the_flying_circus()
 
