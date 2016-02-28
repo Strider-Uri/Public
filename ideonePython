@@ -142,3 +142,60 @@ def shout(phrase):
         return "Can you speak up?"
 
 shout("I'M INTERESTED IN SHOUTING")
+
+""" module printer """
+
+import math, string           
+everything = dir(math) 
+print everything       
+
+""" trip advisor """
+
+def hotel_cost(nights):
+    return 140*nights
+    
+def plane_ride_cost(city):
+    if city.lower()=="charlotte":
+        return 183
+    elif city.lower()=="tampa":
+        return 220
+    elif city.lower()=="pittsburgh":
+        return 222
+    elif city.lower()=="los angeles":
+        return 475
+    else:
+        return "Enter a valid city."
+    
+def rental_car_cost(days):
+    if days<=0:
+        return 0
+    elif days<3 and days>0:
+        return days*40
+    elif days>=3 and days<7:
+        return (days*40)-20
+    elif days>=7:
+        return (days*40)-50
+    else:
+        return "Woops! Invalid entry."
+    
+def trip_cost(city, days, spending_money):
+    return rental_car_cost(days)+hotel_cost(days)+plane_ride_cost(city)+spending_money
+    
+print trip_cost("Los angeles", 5, 600)
+
+""" Dictionaries """
+
+menu = {} # Empty dictionary
+menu['Chicken Alfredo'] = 14.50 # Adding new key-value pair
+print menu['Chicken Alfredo']
+
+# Your code here: Add some dish-price pairs to menu!
+menu['Rotisserie'] = 12.00
+menu['Soda-Pop'] = 1.50
+menu['Paper plate'] = .15
+menu['New Item'] = .50
+
+
+print "There are " + str(len(menu)) + " items on the menu."
+print menu
+
