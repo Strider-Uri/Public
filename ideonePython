@@ -199,3 +199,28 @@ menu['New Item'] = .50
 print "There are " + str(len(menu)) + " items on the menu."
 print menu
 
+inventory = {
+    'gold' : 500,
+    'pouch' : ['flint', 'twine', 'gemstone'], # Assigned a new list to 'pouch' key
+    'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+}
+
+# Adding a key 'burlap bag' and assigning a list to it
+inventory['burlap bag'] = ['apple', 'small ruby', 'three-toed sloth']
+inventory['pocket']=['seashell', 'strange berry', 'lint']
+# Sorting the list found under the key 'pouch'
+inventory['pouch'].sort() 
+inventory['backpack'].sort()
+
+answer=raw_input("Would you like to sell your dagger?")
+if answer.lower() == "yes" or answer.lower() == "y":
+	inventory['backpack'].remove('dagger')
+	inventory['gold']+=50
+elif answer.lower() == "no" or answer.lower() == "n":
+	menu=raw_input("1: Buy \n 2: Sell \n 3: Exit")
+    dagger_method(dagger_level_1)
+else:
+    print "Pardon?"
+
+print inventory
+
