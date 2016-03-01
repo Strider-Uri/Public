@@ -1,0 +1,13 @@
+roster = {
+		"Eric Cartmon" : 0,
+		"Joshua Morgan" : 0,
+		"Job" : 25,
+		"Colonel Sanders" : 1
+		}
+
+for item in roster:
+    raw_input("Enter round points for " + item + ".")
+    print item + ": " + str(roster[item])
+
+#unresolved method for adding to dictionary element.
+    
