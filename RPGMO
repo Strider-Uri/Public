@@ -2,3 +2,29 @@ Operative functions for game drivers
 perhaps using java?
 
 Math.round(Math.random()*2); //for quest rewards
+
+""" defence algorithm """
+Using the following variables:
+
+str = attacker's strength
+acc = attacker's accuracy
+pow = attacker's power
+aim = attacker's aim
+def = target defense
+arm = target armor
+And the following functions:
+
+Random() - gives a random number between 0 and 1
+Max(a, b) - equal to "a" or "b", whichever is larger
+Ceiling(a) - gives the smallest integer equal or larger than "a"
+Damage is calculated as follows:
+
+tot_str = str + pow / 2
+tot_acc = acc + aim / 2
+tot_def = def + arm / 3
+if combat style is aggressive, tot_str = tot_str + 1
+if combat style is defensive, tot_acc = tot_acc + 1
+if combat style is accurate, tot_def = tot_def + 1
+temp_damage = 1 + (tot_str / 5) * Random()
+temp_defense = Max(0, tot_def - tot_acc) * Random()
+final_damage = Max(0, Ceiling(temp_damage - temp_defense))
