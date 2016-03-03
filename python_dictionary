@@ -9,5 +9,11 @@ for item in roster:
     raw_input("Enter round points for " + item + ".")
     print item + ": " + str(roster[item])
 
-#unresolved method for adding to dictionary element.
+""" simple dict user input """
+
+num = 0
+num = raw_input("Enter value to the variable num")
+numbers = { }
+numbers[num] = str(raw_input("add a value to numbers.."))
+print numbers
     
