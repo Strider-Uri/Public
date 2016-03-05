@@ -22,8 +22,8 @@ def sorter():
         numbers.sort()
         print numbers
     else:
-        print "Invalid entry. Enter yes or no." 
-        sorter()
+         raw_input("Invalid entry. You must input yes or no.\nPress Enter.") 
+         sorter()
     
 terms = ['First','Second','Third','Fourth']
 temp = " "
@@ -34,6 +34,5 @@ print terms
 numbers = [5,2,10,-55,20,.4]
 
 sorter()
-
 
 """
