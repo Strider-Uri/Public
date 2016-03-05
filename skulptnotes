@@ -10,7 +10,30 @@ Notes and rules for python implemented through skulpt.org
     application through raw_input() and the like.
 #4 iteration
 
+#5 list manip
+    def thisFunction(varList):
+    varList.append(temp)
+    
+def sorter():
+    bool_sort=raw_input("Would you like to sort the numbers list?")
+    if bool_sort.lower() == 'no' or bool_sort.lower() == 'n':
+        print numbers
+    elif bool_sort.lower() == 'yes' or bool_sort.lower() == 'y':
+        numbers.sort()
+        print numbers
+    else:
+        print "Invalid entry. Enter yes or no." 
+        sorter()
+    
+terms = ['First','Second','Third','Fourth']
+temp = " "
+thisFunction(terms)
 
+print terms
+
+numbers = [5,2,10,-55,20,.4]
+
+sorter()
 
 
 """
