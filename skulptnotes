@@ -27,6 +27,16 @@ def sorter():
     
 terms = ['First','Second','Third','Fourth']
 temp = " "
+
+""" random.randrange(0,100) """
+
+import random
+
+x = random.randrange(0,100)
+for num in amount:
+    print x
+    x
+
 thisFunction(terms)
 
 print terms
