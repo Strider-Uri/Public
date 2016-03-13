@@ -145,9 +145,10 @@ shout("I'M INTERESTED IN SHOUTING")
 
 """ module printer """
 
-import math, string           
-everything = dir(math) 
-print everything       
+import turtle
+everything = dir(turtle)
+for x in range(1,75,1):
+    print str(x) + ": " + str(everything[x])     
 
 """ trip advisor """
 
