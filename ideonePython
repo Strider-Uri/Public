@@ -25,6 +25,26 @@ now = datetime.now()
 print '%s/%s/%s' % (now.month, now.day, now.year)
 print '%s:%s:%s' % (now.hour, now.minute, now.second)
 
+""" class action """
+class Person:
+
+    def __init__(self):
+        print "Trainer instantiated."
+    def __del__(self):
+        print "Trainer terminated."
+    def setFullName(self,firstName,lastName):
+        self.firstName=firstName
+        self.lastName=lastName
+    def getFullName(self):
+        print self.firstName,self.lastName
+	def getFullNAme(self,firstName,middleName,lastName)
+    	print self.firstName,self.middleName,self.lastName
+        
+myName=Person()
+myName.setFullName(raw_input("Enter your first name."),raw_input("Enter your last name."))
+myName.getFullName()
+myName.__del__()
+
 """ Control Flow """
 
 def choice():
