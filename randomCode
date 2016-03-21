@@ -1,0 +1,23 @@
+"""
+import turtle
+t = turtle.Turtle()
+t.forward(75)
+t.penup()
+t.forward(75)
+t.pendown()
+t.forward(75)
+print str(len("Hello World"))
+inventory = {
+    'gold' : 500,
+    'pouch' : ['flint', 'twine', 'gemstone'], # Assigned a new list to 'pouch' key
+    'backpack' : ['xylophone','dagger', 'bedroll','bread loaf']
+}
+print inventory
+print inventory['gold']
+print str(len(inventory))
+everything = dir(turtle)
+for x in range(1,75,1):
+    print str(x) + ": " + str(everything[x])
+    
+"""
+
