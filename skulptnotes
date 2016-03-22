@@ -10,6 +10,60 @@ Notes and rules for python implemented through skulpt.org
     application through raw_input() and the like.
 #4 iteration
 
+import turtle
+
+color_1='blue'
+color_2='purple'
+
+left_a=45
+left_b=90
+left_c=135
+
+right_a=45
+
+forward_a=57
+forward_b=80
+
+goto_a=[0,0]
+goto_b=[0,80]
+goto_c=[80,0]
+goto_d=[80,80]
+goto_e=[40,40]
+
+t = turtle.Turtle()
+
+for c in [str(color_1),str(color_1),str(color_1),str(color_1)]:
+    t.color(c)
+    t.forward(forward_b)
+    t.left(left_b)
+
+t.goto(goto_e)
+
+for c in [str(color_2),str(color_2),str(color_2),str(color_2)]:
+    t.color(c)
+    t.forward(forward_b)
+    t.left(left_b)
+    
+t.goto(goto_b)
+t.left(left_a)
+t.forward(forward_a)
+t.penup()
+t.goto(goto_d)
+t.pendown()
+t.forward(forward_a)
+t.penup()
+t.goto(goto_c)
+t.pendown()
+t.forward(forward_a)
+t.penup()
+t.goto(goto_a)
+t.pendown()
+t.forward(forward_a)
+t.right(right_a)
+t.forward(forward_b)
+t.left(left_c)
+t.forward(forward_a)
+
 #5 list manip
     def thisFunction(varList):
     varList.append(temp)
