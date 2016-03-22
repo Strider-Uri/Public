@@ -64,6 +64,41 @@ t.forward(forward_b)
 t.left(left_c)
 t.forward(forward_a)
 
+"""
+import turtle
+x = 50
+y = 90
+t=turtle.Turtle()
+
+s = turtle.Screen()
+
+print s
+
+t.begin_fill()
+t.color('green','red')
+"""t.forward(x)
+t.left(y)
+t.forward(x)
+t.left(y)
+t.forward(x)
+t.left(y)
+t.forward(x)
+t.left(y)"""
+t.width(4)
+t.speed(20)
+t.circle(100)
+t.up()
+t.goto(45,45)
+t.down()
+t.circle(50)
+t.color('light pink')
+t.end_fill()
+t.goto(0,0)
+t.speed(0)
+t.circle(80,-5,60)
+t.done()
+"""
+
 #5 list manip
     def thisFunction(varList):
     varList.append(temp)
