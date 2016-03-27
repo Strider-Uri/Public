@@ -13,3 +13,33 @@ min(s)	# smallest item of s
 max(s)	# largest item of s	 
 s.index(x)	# index of the first occurrence of x in s	 
 s.count(x)	# total number of occurrences of x in s
+
+import turtle
+
+def pentagon(size):
+    for c in [1,2,3,4,5]:
+        t.color('black')
+        t.forward(size)
+        t.left(540/7.5)
+       
+t = turtle.Turtle()
+t.speed(4)
+t.fill(1)
+pentagon(50)
+t.color('red')
+t.fill(0)
+#t.clear()
+pentagon(50)
+
+t.forward(50)
+t.left(80)
+t.forward(60)
+"""for x in range(17):
+    counter+=1
+    t.left(12)
+    t.forward(12)"""
+t.forward(45)
+t.left(76)
+t.forward(42)
+"""words=dir(turtle)
+print words"""
