@@ -16,6 +16,39 @@ s.count(x)	# total number of occurrences of x in s
 
 
 """
+
+import turtle
+red=0
+blue=0
+green=0
+incre=0
+t = turtle.Turtle()
+length = 15
+t.speed(0)
+for x in range(50):
+    incre+=1
+    for x in range(15):
+        t.color(red, green, blue)
+        t.forward(length)
+        if (x % 2) == 0:
+            t.left(45)
+        else: 
+            t.right(45)
+    t.penup()
+    t.home()
+    t.pendown()
+    for x in range(15):
+        red+=x
+        blue+=2
+        green+=1
+        t.forward(length+incre)
+        t.color(red, green, blue)
+        if (x % 2) == 0:
+            t.left(45)
+        else: 
+            t.right(45)
+            
+            """
 def pentagon(size):
     for c in [1,2,3,4,5]:
         t.color('black')
