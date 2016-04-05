@@ -17,6 +17,25 @@ s.count(x)	# total number of occurrences of x in s
 
 """
 
+"""
+def listCheck(word, wordlist):
+    if word.isalpha():
+        for x in wordlist:
+            if word.lower() == x.lower():
+                print x
+                break
+            else:
+                print "not correct"
+    else:
+        word = raw_input("Incorrect entry. Spell a word with no numbers or symbols.")
+        listCheck(word, wordlist)
+        
+list1 = ["Alpha", "Apple", "Arrow"]
+word = raw_input("Enter an A-word from your word list.")
+listCheck(word, list1)
+"""
+
+"""
 import turtle
 red=0
 blue=0
