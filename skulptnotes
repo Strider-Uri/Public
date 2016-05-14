@@ -1,3 +1,32 @@
+""" import turtle
+def triangle(turt, turt2, turt3, turt4, line, angle):
+    for x in range(point):
+        turt.forward(line)
+        turt.left(angle)
+    turt2.forward(line*.25)
+    turt2.left(60)
+    for x in range(point):
+        turt2.forward(line*.25)
+        turt2.left(angle)
+    line = line*.5
+    turt.forward(line)
+    turt.left(60)
+    triangle(turt, turt2, turt3, turt4, line, angle)
+
+t = turtle.Turtle()
+t.speed(0)
+t2 = turtle.Turtle()
+t2.speed(0)
+t3 = turtle.Turtle()
+t3.speed(0)
+t4 = turtle.Turtle()
+t4.speed(0)
+line=200
+point=3
+angle=120
+
+triangle(t, t2, t3, t4, line, angle)
+"""
 """
 Notes and rules for python implemented through skulpt.org
 
